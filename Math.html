@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Math Quiz</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="game.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h4 style="text-align: left;" id="Player1name" class="text-info"></h4><span id="player1_score"></span>
+        <h4 style="text-align: left;" id="Player2name" class="text-info"></h4><span id="player2_score"></span>
+        <center>
+            <h2 style="color: white;">Type your numbers</h2>
+            <h3 id="player_question" class="text-success">Q Turn:</h3>
+            <h3 id="player_answer" class="text-success">A Turn:</h3>
+            <div id="output" class="col-lg-6 col-sm-8 col-xs-11">
+            </div>
+            <br>
+            <br>
+            <label>Type your numbers <b style="color: red"></b></label>
+            <br>
+            <br>
+            <input type="text" placeholder="Type here" id="num1" class="btn btn-info form-control">
+            <br>
+            <br>
+            <input type="text" placeholder="Type here" id="num2" class="btn btn-info form-control">
+            <br>
+            <br>
+            <button onclick="adduser()" style="width: 30%;" class="btn btn-warning">Send</button>
+            <br>
+
+        </center>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
